@@ -7,5 +7,6 @@ class CustomUserSerializer(serializers.ModelSerializer):
         fields = '__all__'
         extra_kwargs = {'password': {'write_only': True}}
 
+# this is for hashing the password. IE 
     def create(self, validated_data):
         return CustomUser.objects.create_user(**validated_data)
