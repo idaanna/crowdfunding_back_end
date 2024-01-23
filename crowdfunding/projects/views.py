@@ -74,7 +74,7 @@ class PledgeList(APIView):
         serializer = PledgeSerializer(data=request.data)
         if serializer.is_valid():
             # home work change. IE
-            serializer.save(owner=request.user)
+            serializer.save(supporter=request.user)
             return Response(
                 serializer.data,
                 status=status.HTTP_201_CREATED
