@@ -1,19 +1,41 @@
 # crowdfunding_back_end
 
-[x] A link to the deployed project. - https://crowdfunding-back-end-ie.fly.dev
-[X] A screenshot of Insomnia, demonstrating a successful GET method for any
+- [x] A link to the deployed project. - https://crowdfunding-back-end-ie.fly.dev
+
+- [X] A screenshot of Insomnia, demonstrating a successful GET method for any
 endpoint.
-[X] A screenshot of Insomnia, demonstrating a successful POST method for any
-endpoint.
-[X] A screenshot of Insomnia, demonstrating a token being returned.
-[ ] Step by step instructions for how to register a new user and create a new
+
+![Succesful GET method](<project_img\GET Projects.png>)
+
+- [X] A screenshot of Insomnia, demonstrating a successful POST method for any
+endpoint. 
+
+![Succesful POST request](<project_img/POST Project Auth User.png>)
+
+- [X] A screenshot of Insomnia, demonstrating a token being returned.
+
+![Token returned](<project_img\Successful token returned.png>)
+
+- [] Step by step instructions for how to register a new user and create a new
 project (i.e. endpoints and body data).
-[ ] Your refined API specification and Database Schema. 
+
+**New User** 
+1. First, retrieve a token through https://crowdfunding-back-end-ie.fly.dev/api-token-auth/ with your superuser credentials saved in fly.io. In a POST request enter {
+	"username": "testusername",
+	"password": "testpassword"
+}
+
+**Create a new Project**
+
+- [ ] Your refined API specification and Database Schema. 
 
 # Crowdfunding Back End
 Ida Eriksson
+
 ## Planning:
+
 ### Concept/Name
+
 Clicks for chicks - this is a crowd funding page about birds and atm only birds in Western Australia. It's made as a celebration of what Western Australia Seabird Rescue does, especially after they came and rescued a baby Darter when I called them. 
 
 ### Intended Audience/User Stories
@@ -27,6 +49,7 @@ The target audience are bird nerds like myself. They are direct descendents from
 - {{ A second page available on the front end }}
 - {{ Another list of dot-points showing functionality }}
 - {{ etc }}
+- 
 ### API Spec
 {{ Fill out the table below to define your endpoints. An example of what this
 might look like is shown at the bottom of the page.
