@@ -5,7 +5,7 @@
 - [X] A screenshot of Insomnia, demonstrating a successful GET method for any
 endpoint.
 
-![Succesful GET method](<project_img\GET Projects.png>)
+![GET method](<project_img/GET Projects.png>)
 
 - [X] A screenshot of Insomnia, demonstrating a successful POST method for any
 endpoint. 
@@ -14,7 +14,7 @@ endpoint.
 
 - [X] A screenshot of Insomnia, demonstrating a token being returned.
 
-![Token returned](<project_img\Successful token returned edit.png>)
+![Token returned](<project_img/Successful token returned edit.png>)
 
 - [x] Step by step instructions for how to register a new user and create a new
 project (i.e. endpoints and body data).
