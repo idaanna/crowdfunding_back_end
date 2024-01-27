@@ -14,20 +14,31 @@ endpoint.
 
 - [X] A screenshot of Insomnia, demonstrating a token being returned.
 
-![Token returned](<project_img\Successful token returned.png>)
+![Token returned](<project_img\Successful token returned edit.png>)
 
-- [] Step by step instructions for how to register a new user and create a new
+- [x] Step by step instructions for how to register a new user and create a new
 project (i.e. endpoints and body data).
 
 **New User** 
-1. First, retrieve a token through https://crowdfunding-back-end-ie.fly.dev/api-token-auth/ with your superuser credentials saved in fly.io. In a POST request enter {
+1. Create a user through https://crowdfunding-back-end-ie.fly.dev/users. In a POST request enter {
 	"username": "testusername",
 	"password": "testpassword"
 }
 
 **Create a new Project**
+1. log in with your user details created above at https://crowdfunding-back-end-ie.fly.dev/users
+2. Once logged in you will need to send a POST request will the following info 	
+   {
+    "title": "Project 10.",
+    "description": "Show some love for the Swamphens!",
+	"goal": "2000",
+	"image": "https://images.unsplash.com/,
+	"is_open": "true",
+	"date_created": "{% now 'iso-8601', '' %}" 
+   }
+3. POST the details and tada, a new project will be created and active. 
 
-- [ ] Your refined API specification and Database Schema. 
+- [x] Your refined API specification and Database Schema. 
 
 # Crowdfunding Back End
 Ida Eriksson
@@ -41,7 +52,7 @@ Clicks for chicks - this is a crowd funding page about birds and atm only birds 
 ### Intended Audience/User Stories
 The target audience are bird nerds like myself. They are direct descendents from the dinosaurs after all (the birds, not the audience).
 
-### Front End Pages/Functionality
+<!-- ### Front End Pages/Functionality
 - {{ A page on the front end }}
 - {{ A list of dot-points showing functionality is available on this page }}
 - {{ etc }}
@@ -49,19 +60,12 @@ The target audience are bird nerds like myself. They are direct descendents from
 - {{ A second page available on the front end }}
 - {{ Another list of dot-points showing functionality }}
 - {{ etc }}
-- 
+-  -->
 ### API Spec
-{{ Fill out the table below to define your endpoints. An example of what this
-might look like is shown at the bottom of the page.
-It might look messy here in the PDF, but once it's rendered it looks very neat!
-It can be helpful to keep the markdown preview open in VS Code so that you can
-see what you're typing more easily. }}
-| URL | HTTP Method | Purpose | Purpose | Request Body | Success Response Code |
-Authentication/Authorisation |
-| --- | ----------- | ------- | ------- | ------------ | --------------------- |
----------------------------- |
-| | | | | | |
-|
+
+![API part 1](<project_img/Crowdfunding API part1.png>)
+
+![APi part 2](<project_img/Crowdfunding API part2.png>)
 
 ### DB Schema
 ![x]( cf.drawio.svg )
